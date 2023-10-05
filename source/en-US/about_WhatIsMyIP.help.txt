@@ -1,0 +1,36 @@
+TOPIC
+    about_WhatIsMyIP
+
+SHORT DESCRIPTION
+    Module for getting Public IP of the computer.
+
+LONG DESCRIPTION
+    Module for getting Public IP of the computer using ipify.org and ipinfo.io APIs.
+
+EXAMPLES
+        PS C:\> Get-PublicIP
+        0.0.0.1
+
+        PS C:\> whatismyip -detailed
+        ip       : 1.1.1.1
+        hostname : one.one.one.one
+        anycast  : True
+        city     : Los Angeles
+        region   : California
+        country  : US
+        loc      : 34.0522,-118.2437
+        org      : AS13335 Cloudflare, Inc.
+        postal   : 90076
+        timezone : America/Los_Angeles
+
+NOTE:
+    Thank you to all those who contributed to this module, by writing code, sharing opinions, and provided feedback.
+
+TROUBLESHOOTING NOTE:
+    Look out on the Github repository for issues and new releases.
+
+SEE ALSO
+  - https://github.com/andysvints/WhatIsMyIP
+
+KEYWORDS
+      'ExternalIP', 'PublicIP', 'whatismyip', 'api', 'ipfy.org', 'ipinfo.io'
