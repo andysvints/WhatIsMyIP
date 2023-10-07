@@ -4,7 +4,7 @@ function Get-PublicIP
         .Synopsis
         Get External IP address
         .DESCRIPTION
-        Get External IP address using free ipfy.org API.
+        Get External IP address using ipify.org and ipinfo.io APIs.
         .EXAMPLE
         PS C:\> Get-PublicIP
         0.0.0.1
@@ -20,6 +20,9 @@ function Get-PublicIP
         org      : AS13335 Cloudflare, Inc.
         postal   : 90076
         timezone : America/Los_Angeles
+
+        .PARAMETER Detailed
+        Switch to return detailed information about the IP address
     #>
     [CmdletBinding(SupportsShouldProcess=$true,
                   PositionalBinding=$false,
@@ -46,8 +49,7 @@ function Get-PublicIP
                 }
             }
             catch {
-                Write-Verbose "Something bad happened. Please review exception message for more details"
-                Write-Error ("Catched Exception: - $($_.exception.message)")
+              Write-Error ("Catched Exception: - $($_.exception.message)")
             }
 
         }

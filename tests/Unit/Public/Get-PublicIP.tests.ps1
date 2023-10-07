@@ -21,6 +21,21 @@ InModuleScope $ProjectName {
 
         }
 
+        Context 'Return shortened values' {
+            BeforeAll {
+                $return = Get-PublicIP
+            }
+
+            It 'Returns a single object' {
+                ($return | Measure-Object).Count | Should -Be 1
+            }
+
+            It 'Return string' {
+                $return | Should -BeOfType [string]
+            }
+
+        }
+
         Context 'ShouldProcess' {
             It 'Supports WhatIf' {
                 (Get-Command Get-PublicIP).Parameters.ContainsKey('WhatIf') | Should -Be $true

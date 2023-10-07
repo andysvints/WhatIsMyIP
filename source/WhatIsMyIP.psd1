@@ -24,13 +24,13 @@ GUID = '75516e64-7fa1-4f5f-98b6-729c356ab5df'
 Author = 'Andy Svintsitsky'
 
 # Company or vendor of this module
-CompanyName = 'Unknown'
+CompanyName = 'AndySvints'
 
 # Copyright statement for this module
-Copyright = '(c) Andy Svintsitsky. All rights reserved.'
+Copyright = '(c) AndySvints. All rights reserved.'
 
 # Description of the functionality provided by this module
-Description = 'Module for geting Public IP of the computer.'
+Description = 'Module for getting Public IP of the computer.'
 
 # Minimum version of the PowerShell engine required by this module
 # PowerShellVersion = ''
@@ -94,18 +94,18 @@ PrivateData = @{
 
     PSData = @{
 
-        Prerelease = ''
+        #Prerelease = ''
         # Tags applied to this module. These help with module discovery in online galleries.
-        # Tags = @()
+        Tags = @('ExternalIP', 'PublicIP', 'whatismyip', 'api', 'ipfy.org')
 
         # A URL to the license for this module.
-        # LicenseUri = ''
+        LicenseUri = 'https://raw.githubusercontent.com/andysvints/WhatIsMyIP/main/LICENSE'
 
         # A URL to the main website for this project.
-        # ProjectUri = ''
+        ProjectUri = 'https://github.com/andysvints/WhatIsMyIP'
 
         # A URL to an icon representing this module.
-        # IconUri = ''
+        IconUri = 'https://raw.githubusercontent.com/andysvints/WhatIsMyIP/main/assets/WhatIsMyIp.png'
 
         # ReleaseNotes of this module
         # ReleaseNotes = ''
@@ -130,6 +130,3 @@ PrivateData = @{
 # DefaultCommandPrefix = ''
 
 }
-
-
-
